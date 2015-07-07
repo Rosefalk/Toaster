@@ -11,8 +11,9 @@ SCSS (optional, but needed for easy configuration!)
 toaster.toast(object)
 
 Examples:
-toaster.toast();
-toaster.toast({title:"this is a title", text:"this is body text"});
+
+    toaster.toast();
+    toaster.toast({title:"this is a title", text:"this is body text"});
 
 Object reacts to the following / what is marked up in defaults:
 
