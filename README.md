@@ -1,11 +1,11 @@
 # Toaster
-A steam like notification engine for toast messages
+##A steam like notification engine for toast messages
 
-Dependencies:
+###Dependencies
 jQuery
 SCSS (optional, but needed for easy configuration!)
 
-To create a toast message:
+###To create a toast message
 toaster.toast(object)
 
 Examples:
