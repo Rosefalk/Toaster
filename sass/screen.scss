@@ -35,15 +35,23 @@ $right-column-width: ($toast-width) - ($left-column-size) - ($border-size * 4);
     width: $toast-width;
     position: absolute;
 
+    //vertical
     @if $toast-vertical-position == "top" {
         top: $position-from-edge;
+    }@else if $toast-vertical-position == "middle"{
+        bottom: 50%;
+        margin-top: $toast-height/2;
     }@else{
         bottom: $position-from-edge;
     }
-    @if $toast-horizontal-position == "right" {
-        right: $position-from-edge;
-    }@else{
+    //horizontal
+    @if $toast-horizontal-position == "left"{
         left: $position-from-edge;
+    }@else if $toast-horizontal-position == "middle" {
+        left: 50%;
+        margin-left: -$toast-width/2;
+    }@else {
+        right: $position-from-edge;
     }
 
     div{
@@ -105,7 +113,7 @@ $right-column-width: ($toast-width) - ($left-column-size) - ($border-size * 4);
             }
         }
         .right-column.wide{
-            width: 100%;
+            width: $toast-width;
         }
     }
 }
