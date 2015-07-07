@@ -1,6 +1,8 @@
 # Toaster
 ##A steam like notification engine for toast messages
 
+![alt text](https://raw.githubusercontent.com/Rosefalk/Toaster/master/toasts.jpg "default look, can be changed")
+
 ###Dependencies
 jQuery
 SCSS (optional, but needed for easy configuration!)
@@ -32,3 +34,5 @@ Object reacts to the following / what is marked up in defaults:
 Javascript handles all program related and SCSS/precompiler handles layout.
 If you want to change layout then change it in the SCSS! Variables have been
 broken out for you :)
+
+Pop-up position, colors, fonts and so on can easily be configured.
