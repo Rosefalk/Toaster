@@ -8,7 +8,7 @@
         <script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
         <script src="javascript/toaster.js" charset="utf-8"></script>
         <script type="text/javascript">
-            //demo :)
+            //example UI code :)
             $(document).ready(function(){
                 $("#btn1").on("click",function(){
                     toaster.toast({
@@ -27,8 +27,10 @@
         </script>
     </head>
     <body>
+        <!-- example UI -->
         <button id="btn1"type="button" name="noIcon">Create Toast - No Icon</button>
         <button id="btn2"type="button" name="noIcon">Create Toast - Icon</button>
+        <!-- This is the toaster, you need the part below this comment -->
         <div id="toaster" class="toast-wrapper">
             <audio>
              <source src="media/ping.wav" type="audio/wav">
