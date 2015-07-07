@@ -36,3 +36,7 @@ If you want to change layout then change it in the SCSS! Variables have been
 broken out for you :)
 
 Pop-up position, colors, fonts and so on can easily be configured.
+
+###FAQ
+- Q: I'm getting an Audio Error.
+- A: Either set audio to false in defaults or add an audio tag like in the example.
