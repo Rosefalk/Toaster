@@ -24,7 +24,7 @@ Object reacts to the following / what is marked up in defaults:
             text         : "Text",      //text of toaster
             timeFadeIn   : 400,         //time it takes to fade in
             timeDelay    : 4000,        //delay before it fades out
-            timeFadeOut  : 1000,        //toast fade out
+            timeFadeOut  : 1000,        //toast fade out (set to -1 to keep toasts from fading out)
             func         : undefined,   //optional function to be run on click
             playSound    : true         //should a sound play when notifying?
         },
