@@ -27,6 +27,10 @@ function toast(jsonData){
         }else{
             $toast.on("click", function(){
                 $toast.finish();
+    //A more elegant process would be nice as
+    //finish() doesn't fade/remove when timeFadeOut = -1
+    //since they're not queued with that setting
+                $toast.remove();
             })
         }
     //actuall instance the toast
