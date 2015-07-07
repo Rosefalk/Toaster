@@ -10,8 +10,8 @@ function toast(jsonData){
     var audio   = $toaster.children("audio").get(0);
     //clone the hidden template and insert data
     var $toast  = $tmpl.clone();
-        $toast.find(".title").text(settings.title)
-        $toast.find(".text").text(settings.text)
+        $toast.find(".title").html(settings.title)
+        $toast.find(".text").html(settings.text)
         $toast.find(".left-column").css("background-image","url("+settings.icon+")")
     //if no icon has been chosen, remove it
         if(settings.icon === undefined){
