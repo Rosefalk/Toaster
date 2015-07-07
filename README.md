@@ -61,6 +61,7 @@ broken out for you :)
 Pop-up position, colors, fonts and so on can easily be configured.
 
 ###FAQ
+
 - Q: I'm getting an Audio Error.
 - A: playSound: true, needs an Audio tag. If you don't want sound at all, set playsound to false and ditch the Audio tag.
 - 
