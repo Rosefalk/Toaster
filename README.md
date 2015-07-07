@@ -1,7 +1,7 @@
 # Toaster
 ##A steam like notification engine for toast messages
 
-![alt text](https://raw.githubusercontent.com/Rosefalk/Toaster/master/toasts.jpg "default look, can be changed")
+![alt text](https://raw.githubusercontent.com/Rosefalk/Toaster/master/media/toasts.jpg "default look, can be changed")
 
 ###Dependencies
 jQuery
@@ -27,7 +27,7 @@ Object reacts to the following / what is marked up in defaults:
             timeFadeOut  : 1000,        //toast fade out
             func         : undefined,   //optional function to be run on click
             playSound    : true         //should a sound play when notifying?
-        },                
+        },
         toast: toast //this is the function that creates the notifications
     };
 
