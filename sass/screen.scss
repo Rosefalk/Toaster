@@ -83,6 +83,9 @@ $right-column-width: ($toast-width) - ($left-column-size) - ($border-size * 4);
                 background-color: black;
             }
         }
+        .left-column.hide{
+            display: none;
+        }
         .right-column{
             width: $right-column-width;
             min-height: $toast-height;
@@ -100,6 +103,9 @@ $right-column-width: ($toast-width) - ($left-column-size) - ($border-size * 4);
                 color: $text-color;
                 font-size: $text-size;
             }
+        }
+        .right-column.wide{
+            width: 100%;
         }
     }
 }
