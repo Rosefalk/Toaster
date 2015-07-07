@@ -65,5 +65,5 @@ Pop-up position, colors, fonts and so on can easily be configured.
 - Q: I'm getting an Audio Error.
 - A: playSound true, needs an Audio tag. If you don't want sound at all, set playsound to false and ditch the Audio tag.
 
-- Q: I don't like how the notification look!
+- Q: I don't like how the design of the notifications.
 - A: Change layout in screen.scss and compile to css
