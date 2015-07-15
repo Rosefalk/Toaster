@@ -13,23 +13,23 @@ $position-from-edge: 5px;
 $toast-vertical-position: "bottom";
 $toast-horizontal-position: "right";
 //toasts
-$toast-width: 150px; //220
-$toast-height: 150px;
+$toast-width: 250px; //220
+$toast-height: 75px;
 $toast-opacity: 0.75;
 $toast-background: rgba(0,0,0, $toast-opacity);
 $toast-spacing  : 5px;
 $border-size    : 2px;
 $border         : $border-size solid black;
-$border-radius  : 200px;
+$border-radius  : 2px;
 //toast content
 $title-color: white;
 $title-size : 15px;
 $text-color : #ccc;
 $text-size  : 13px;
 $column-spacing: 2px;
-$columns-padding: 7px;
-$left-column-size: 50px;
-$right-column-width: 110px;
+$columns-padding: 5px;
+$left-column-size: $toast-height;
+$right-column-width: ($toast-width) - ($left-column-size) - ($border-size * 4);
 
 .toast-wrapper{
     width: $toast-width;
@@ -80,8 +80,7 @@ $right-column-width: 110px;
         }
         .columns{
             padding     :$columns-padding;
-            text-align: center;
-            margin: auto;
+            float       :left;
         }
         .left-column{
             height      :$left-column-size;
@@ -93,12 +92,12 @@ $right-column-width: 110px;
             }
         }
         .left-column.hide{
-            height: 10px;
-            visibility: hidden;
+            display: none;
         }
         .right-column{
             width: $right-column-width;
-            height: $toast-height/2;
+            min-height: $toast-height;
+            margin-left: $column-spacing;
 
 
             h3{

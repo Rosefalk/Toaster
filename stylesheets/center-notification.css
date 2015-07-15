@@ -67,68 +67,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 34, ../sass/center-notification.scss */
 .toast-wrapper {
-  width: 250px;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
+  width: 600px;
+  position: fixed;
+  top: 50%;
+  margin-top: -201px;
+  left: 50%;
+  margin-left: -301px;
 }
-/* line 57, ../sass/screen.scss */
+/* line 57, ../sass/center-notification.scss */
 .toast-wrapper div {
   font-family: "Ubuntu Mono", Arial, sans-serif;
   box-sizing: border-box;
 }
-/* line 61, ../sass/screen.scss */
+/* line 61, ../sass/center-notification.scss */
 .toast-wrapper .toast.hide {
   display: none;
 }
-/* line 66, ../sass/screen.scss */
+/* line 66, ../sass/center-notification.scss */
 .toast-wrapper .toast {
-  height: 75px;
-  min-width: 250px;
+  height: 400px;
+  min-width: 600px;
   background: rgba(0, 0, 0, 0.75);
-  margin-top: 5px;
+  margin-top: 0px;
   border: 2px solid black;
   border-radius: 2px;
   cursor: pointer;
   overflow: hidden;
 }
-/* line 81, ../sass/screen.scss */
+/* line 81, ../sass/center-notification.scss */
 .toast-wrapper .toast .columns {
   padding: 5px;
   float: left;
 }
-/* line 85, ../sass/screen.scss */
+/* line 85, ../sass/center-notification.scss */
 .toast-wrapper .toast .left-column {
-  height: 75px;
-  width: 75px;
+  height: 400px;
+  width: 400px;
   background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
 }
-/* line 94, ../sass/screen.scss */
+/* line 94, ../sass/center-notification.scss */
 .toast-wrapper .toast .left-column.hide {
   display: none;
 }
-/* line 97, ../sass/screen.scss */
+/* line 97, ../sass/center-notification.scss */
 .toast-wrapper .toast .right-column {
-  width: 167px;
-  min-height: 75px;
+  width: 192px;
+  min-height: 400px;
   margin-left: 2px;
 }
-/* line 103, ../sass/screen.scss */
+/* line 103, ../sass/center-notification.scss */
 .toast-wrapper .toast .right-column h3 {
-  padding-bottom: 5px;
+  padding-bottom: 25px;
   color: white;
+  border: 1px white;
   font-size: 15px;
 }
-/* line 108, ../sass/screen.scss */
+/* line 109, ../sass/center-notification.scss */
 .toast-wrapper .toast .right-column p {
   padding: 0px;
   margin: 0px;
   color: #ccc;
   font-size: 13px;
 }
-/* line 115, ../sass/screen.scss */
+/* line 116, ../sass/center-notification.scss */
 .toast-wrapper .toast .right-column.wide {
-  width: 250px;
+  width: 600px;
 }

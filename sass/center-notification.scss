@@ -9,15 +9,15 @@ $debug: false;
 //defaults
 $font-stack: 'Ubuntu Mono',Arial,sans-serif;
 //toast-wrapper
-$position-from-edge: 5px;
-$toast-vertical-position: "bottom";
-$toast-horizontal-position: "right";
+$position-from-edge: 0px;
+$toast-vertical-position: "middle";
+$toast-horizontal-position: "middle";
 //toasts
-$toast-width: 250px; //220
-$toast-height: 75px;
+$toast-width: 600px; //220
+$toast-height: 400px;
 $toast-opacity: 0.75;
 $toast-background: rgba(0,0,0, $toast-opacity);
-$toast-spacing  : 5px;
+$toast-spacing  : 0px;
 $border-size    : 2px;
 $border         : $border-size solid black;
 $border-radius  : 2px;
@@ -33,14 +33,14 @@ $right-column-width: ($toast-width) - ($left-column-size) - ($border-size * 4);
 
 .toast-wrapper{
     width: $toast-width;
-    position: absolute;
+    position: fixed;
 
     //vertical
     @if $toast-vertical-position == "top" {
         top: $position-from-edge;
     }@else if $toast-vertical-position == "middle"{
-        bottom: 50%;
-        margin-top: $toast-height/2;
+        top: 50%;
+        margin-top: -($toast-height + $border-size)/2;
     }@else{
         bottom: $position-from-edge;
     }
@@ -49,7 +49,7 @@ $right-column-width: ($toast-width) - ($left-column-size) - ($border-size * 4);
         left: $position-from-edge;
     }@else if $toast-horizontal-position == "middle" {
         left: 50%;
-        margin-left: -$toast-width/2;
+        margin-left: -($toast-width + $border-size)/2;
     }@else {
         right: $position-from-edge;
     }
@@ -101,8 +101,9 @@ $right-column-width: ($toast-width) - ($left-column-size) - ($border-size * 4);
 
 
             h3{
-                padding-bottom: 5px;
+                padding-bottom: 25px;
                 color: $title-color;
+                border: 1px $title-color;
                 font-size: $title-size;
             }
             p{
