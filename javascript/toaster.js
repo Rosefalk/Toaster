@@ -21,7 +21,7 @@ function toast(jsonData){
     //if a function has been added, run it, if not, remove toast
         if(settings.func != undefined){
             $toast.on("click", function(){
-                settings.func();
+                settings.func(this);
                 $(this).remove()
             })
         }else{
