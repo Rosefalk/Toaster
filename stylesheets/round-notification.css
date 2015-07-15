@@ -1,0 +1,135 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 34, ../sass/round-notification.scss */
+.toast-wrapper {
+  width: 150px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+/* line 57, ../sass/round-notification.scss */
+.toast-wrapper div {
+  font-family: "Ubuntu Mono", Arial, sans-serif;
+  box-sizing: border-box;
+}
+/* line 61, ../sass/round-notification.scss */
+.toast-wrapper .toast.hide {
+  display: none;
+}
+/* line 66, ../sass/round-notification.scss */
+.toast-wrapper .toast {
+  height: 150px;
+  min-width: 150px;
+  background: rgba(0, 0, 0, 0.75);
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 200px;
+  cursor: pointer;
+  overflow: hidden;
+}
+/* line 81, ../sass/round-notification.scss */
+.toast-wrapper .toast .columns {
+  padding: 7px;
+  text-align: center;
+  margin: auto;
+}
+/* line 86, ../sass/round-notification.scss */
+.toast-wrapper .toast .left-column {
+  height: 50px;
+  width: 50px;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+/* line 95, ../sass/round-notification.scss */
+.toast-wrapper .toast .left-column.hide {
+  height: 10px;
+  visibility: hidden;
+}
+/* line 99, ../sass/round-notification.scss */
+.toast-wrapper .toast .right-column {
+  width: 110px;
+  height: 75px;
+}
+/* line 104, ../sass/round-notification.scss */
+.toast-wrapper .toast .right-column h3 {
+  padding-bottom: 5px;
+  color: white;
+  font-size: 15px;
+}
+/* line 109, ../sass/round-notification.scss */
+.toast-wrapper .toast .right-column p {
+  padding: 0px;
+  margin: 0px;
+  color: #ccc;
+  font-size: 13px;
+}
+/* line 116, ../sass/round-notification.scss */
+.toast-wrapper .toast .right-column.wide {
+  width: 150px;
+}

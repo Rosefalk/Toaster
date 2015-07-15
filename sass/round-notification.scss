@@ -1,0 +1,120 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$debug: false;
+//defaults
+$font-stack: 'Ubuntu Mono',Arial,sans-serif;
+//toast-wrapper
+$position-from-edge: 5px;
+$toast-vertical-position: "bottom";
+$toast-horizontal-position: "right";
+//toasts
+$toast-width: 150px; //220
+$toast-height: 150px;
+$toast-opacity: 0.75;
+$toast-background: rgba(0,0,0, $toast-opacity);
+$toast-spacing  : 5px;
+$border-size    : 2px;
+$border         : $border-size solid black;
+$border-radius  : 200px;
+//toast content
+$title-color: white;
+$title-size : 15px;
+$text-color : #ccc;
+$text-size  : 13px;
+$column-spacing: 2px;
+$columns-padding: 7px;
+$left-column-size: 50px;
+$right-column-width: 110px;
+
+.toast-wrapper{
+    width: $toast-width;
+    position: absolute;
+
+    //vertical
+    @if $toast-vertical-position == "top" {
+        top: $position-from-edge;
+    }@else if $toast-vertical-position == "middle"{
+        bottom: 50%;
+        margin-top: $toast-height/2;
+    }@else{
+        bottom: $position-from-edge;
+    }
+    //horizontal
+    @if $toast-horizontal-position == "left"{
+        left: $position-from-edge;
+    }@else if $toast-horizontal-position == "middle" {
+        left: 50%;
+        margin-left: -$toast-width/2;
+    }@else {
+        right: $position-from-edge;
+    }
+
+    div{
+        font-family: $font-stack;
+        box-sizing: border-box;
+    }
+    .toast.hide{
+        display:none;
+    }
+
+
+    .toast{
+        height          : $toast-height;
+        min-width       : $toast-width;
+        background      : $toast-background;
+        margin-top      : $toast-spacing;
+        border          : $border;
+        border-radius   : $border-radius;
+        cursor          : pointer;
+        overflow        : hidden;
+
+
+        @if $debug{
+            *{
+            border: 1px solid white;}
+        }
+        .columns{
+            padding     :$columns-padding;
+            text-align: center;
+            margin: auto;
+        }
+        .left-column{
+            height      :$left-column-size;
+            width       : $left-column-size;
+
+            background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+            @if $debug{
+                background-color: black;
+            }
+        }
+        .left-column.hide{
+            height: 10px;
+            visibility: hidden;
+        }
+        .right-column{
+            width: $right-column-width;
+            height: $toast-height/2;
+
+
+            h3{
+                padding-bottom: 5px;
+                color: $title-color;
+                font-size: $title-size;
+            }
+            p{
+                padding: 0px;
+                margin: 0px;
+                color: $text-color;
+                font-size: $text-size;
+            }
+        }
+        .right-column.wide{
+            width: $toast-width;
+        }
+    }
+}
