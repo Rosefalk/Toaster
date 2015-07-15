@@ -48,7 +48,7 @@ var toaster = {
         timeFadeIn   : 400,         //time it takes to fade in
         timeDelay    : 4000,        //delay before it fades out
         timeFadeOut  : 1000,        //toast fade out (set to -1 to keep toasts from fading out)
-        func         : undefined,   //optional function to be run on click
+        func         : undefined,   //optional function to be run on click, first parameter is the html object
         playSound    : true         //should a sound play when notifying?
     },
     toast: toast //this is the function that creates the notifications
