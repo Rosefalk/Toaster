@@ -60,7 +60,7 @@ var toaster = {
         text         : "Text",      //text of toaster
         timeFadeIn   : 400,         //time it takes to fade in
         timeDelay    : 4000,        //delay before it fades out
-        timeFadeOut  : -1,        //toast fade out
+        timeFadeOut  : 4000,        //toast fade out
         func         : undefined,   //optional function to be run on click
         playSound    : true         //should a sound play when notifying?
     },
